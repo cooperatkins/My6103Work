@@ -49,19 +49,20 @@ print("type of tuple4: %s, length of tuple4: %d" % (type(tuple4), len(tuple4)) )
 # Try
 # write some notes/comments for each case, so that you can review them easily yourself
 alist[1:4]  # inclusive on the start index, exclusive of the end index
-alist[:4]
-alist[:]
+alist[:4] #Everything up to and exclusive of the end index
+alist[:] #Everything in the whole list
 # optional argument, skipping every 1 element with :2 at the end
 alist[1:4:2]
 alist[1:5:2]
 alist[1:3:2]
 # what do you expect the result of this to be?
-alist[1::2]
+alist[1::2] #Shows value in 1 slot through the end, but showing only every other one
 # Also try 
-alist[-4]
-alist[-4:-2]
-alist[-4:]
-alist[-2:-4]
+print(alist[-4]) #Shows fourth from the end
+print(alist[-4:-2]) #Shows 4th and 3rd from the end (last value is exclusive)
+print(alist[-4:]) #Shows 4th from the end until the end
+print(alist[-2:-4]) #Doesn't show anything because this is invalid indexing
+print(alist[0]) #Shows first value
 
 #%%
 # Now try tuple, set, and dictionary
@@ -153,6 +154,7 @@ if x == 1 or 2 or 3:
 	print("OK")
 x == 1 or 2 or 3
 
+#Can also use & or |
 
 #%%
 # conditional

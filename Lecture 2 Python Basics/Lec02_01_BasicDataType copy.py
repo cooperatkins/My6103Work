@@ -87,6 +87,7 @@ adictionary2 = { "name": "Einstein", 1: "one", 3.14: 3.14159, True: 'love', "las
 print(adictionary2)
 print(type(adictionary2["last"]))
 print(len(adictionary2))
+#If we use boolean, it will always be turned to 0 and 1, so by using True as a key, we actually have a duplicate key, so we overrode the original 1 value
 
 #%%
 # ######## BUT BE VERY CAREFUL if you use bool and float. They might not be what you expect.
@@ -202,14 +203,16 @@ alist = [1, 'person', 1, 'heart', 10, 'fingers']
 adictionary3 = { "name": "Einstein", 2: "two", 3.14: 3.14159, True: 'loves', "last": alist }
 
 # len(adictionary3)
-acopy1 = adictionary3
-acopy2 = adictionary3.copy()
+acopy1 = adictionary3 #assignment, this is a shallow copy (true copy if it's one of the BIFS types). Simple assignment gives me a reference
+acopy2 = adictionary3.copy() #
 import copy
 acopy3 = copy.copy(adictionary3)
 acopy4 = copy.deepcopy(adictionary3)
+#deepcopy function copies every level as a true copy (different library)
 
 acopy1[2] = 'duo'
 acopy1['last'][3]='nose'
+#We have a double bracket here because the definition paired with 'last' is a list, so we're then changing the 3rd slot within the list corresponding to the key 'last'
 
 print(adictionary3)
 print(acopy1)
