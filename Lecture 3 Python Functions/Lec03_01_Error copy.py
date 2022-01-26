@@ -30,8 +30,8 @@ try:
 # except NameError:
 #   bp.beep("ping")
 #   print('NameError with somebody')
-  # somebody = "SomeBD"
-  # print('Error resolved.\nok')
+#   somebody = "SomeBD"
+#   print('Error resolved.\nok')
  
 # we can continue to add other types of exceptions we want to handle 
 except BaseException as e:
