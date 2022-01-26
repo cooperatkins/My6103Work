@@ -20,6 +20,10 @@ print( "ok" if (somebody) else "not ok" )
 
 # You can also check the versions under Anaconda...
 
+#pip is the Python library/program manager
+#!pip freeze would freeze everything so we can see their versions
+#!pip show LIBRARY will tell you what version of that particular package you have
+
 import beepy as bp
 
 # %%
@@ -36,7 +40,7 @@ try:
 # we can continue to add other types of exceptions we want to handle 
 except BaseException as e:
   bp.beep("ping")
-  print(f'Unexptected error with somebody: {e}')
-
+  print(f'Unexpected error with somebody: {e}')
+#This is an error clause that is skipped to if there's an error
 #%%
 # Use del to delete an env variable.
