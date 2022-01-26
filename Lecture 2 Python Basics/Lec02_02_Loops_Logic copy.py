@@ -186,12 +186,23 @@ incomelevel = "super rich" if income > 200000 else "rich" if income > 100000 els
 print(incomelevel)
 
 # write your conditional statment to assign letter grades A, A-, B+ etc according to the syllabus
+def grade(score):
+  if score >= 90:
+    print("A")
+  elif score >= 80:
+    print("B")
+  elif score >= 70:
+    print("C")
+  elif score >= 60:
+    print("D")
+  else:
+    print("F")
 
 #%%
 # loops - basic
 for i in range(10):
   print(i)
-
+#Range (10) says 0 to 9
 #%%
 # loops - basic
 print("looping i:")
@@ -199,7 +210,7 @@ for i in range(1000):
   print('still going',i)
   if i>13:
     break
-
+#Break statement stops the loop
 #%%
 print("\nlooping j:")
 for j in range(2,1000,2):
@@ -247,7 +258,7 @@ print("\nalternative method to loop thru key, val in dictionary:")
 for key, val in adictionary.items() :
   # print("key:", key, "value:", val, "type of value", type(val))
   print(f"key: {key}, value: {val}, and type of val: {type(val)}" )
-
+#This will give you both key and value when you use .items() and we can use both variables simultaneously
 #%%
 # for val in string :
 print("\nloop characters in a string:")
@@ -264,7 +275,7 @@ for index, val in enumerate(alist) :
   # print("index", index, "value", val, alist[index], type(val))
   print(f"index: {index}, value: {val}, and type of val: {type(val)}" )
 print()
-
+#This also gives you a pair, the index and the value (creates an id column of sorts)
 #%%
 # Try tuple, set, and dictionary
 print("\nloop key value pairs in a tuple like that?")
