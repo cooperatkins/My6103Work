@@ -8,8 +8,8 @@ print( "ok" if (somebody) else "not ok" )
 # pip is the package management system for python. 
 # If you have an older system with python 2 and python 3 installed, 
 # you might need pip3 to install to your python 3 environment. 
-!pip install beepy # Do this in interactive python will install in your conda env
-# pip install beepy # Do this in the terminal will install in your system's default python env (system PATH)
+!pip install beepy # Do this in interactive python will install in your conda env - the! asks it to go to the shell
+# pip install beepy # Do this in the terminal (bash) will install in your system's default python env (system PATH)
 # conda install beepy # Some of you might need conda install, depending on your system settings.
 
 # other related commands:
